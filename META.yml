@@ -1,0 +1,14 @@
+--- #YAML:1.0
+name:                Exporter
+version:             5.59
+version_from:        lib/Exporter.pm
+installdirs:         perl
+abstract:            Implements default import method for modules
+license:             perl
+generated_by:        ExtUtils::MakeMaker version 6.30_03
+author:              ~
+distribution_type:   module
+requires:
+meta-spec:
+    url: http://module-build.sourceforge.net/META-spec-v1.1.html
+    version: 1.1
