@@ -8,7 +8,7 @@ BEGIN {
 }
 
 # Can't use Test::Simple/More, they depend on Exporter.
-my $test = 1;
+my $test;
 sub ok ($;$) {
     my($ok, $name) = @_;
 
@@ -23,9 +23,12 @@ sub ok ($;$) {
 }
 
 
-print "1..28\n";
-require Exporter;
-ok( 1, 'Exporter compiled' );
+BEGIN {
+    $test = 1;
+    print "1..28\n";
+    require Exporter;
+    ok( 1, 'Exporter compiled' );
+}
 
 
 BEGIN {
@@ -168,7 +171,7 @@ eval { Yet::More::Testing->require_version(10); 1 };
 
 my $warnings;
 BEGIN {
-    $SIG{__WARN__} = sub { $warnings = join '', @_ };
+    local $SIG{__WARN__} = sub { $warnings = join '', @_ };
     package Testing::Unused::Vars;
     @ISA = qw(Exporter);
     @EXPORT = qw(this $TODO that);
@@ -203,7 +206,6 @@ package The::Import;
 
 use Exporter 'import';
 
-eval { import() };
 ::ok(\&import == \&Exporter::import, "imported the import routine");
 
 @EXPORT = qw( wibble );

@@ -1,5 +1,22 @@
 Revision history for Perl extension Exporter.
 
+5.60    Sat Mar 10 2007
+        - Bump Exporter's $VERSION (change 30525)
+        - Don't swallow up other warnings in Exporter's test. Remove a needless
+          eval that happened to generate 4 warnings. (change 30531)
+        - Make Exporter::Heavy correctly not warn when exporting a symbol only
+          declared in the export specification. Ensure that the test actually
+          tests this. (change 30529)
+        - added t/use.t and t/pod.t
+
 5.59   Wed Sep 6 2006
         - Dual life began. (perl-current @ 28789)
 
+5.59    ? Jan 7 2005
+        - Exporter can finally live w/o Carp (change 23768)
+
+5.58    ? Jan 26 2004
+        - Document change 22192 (change 22224)
+
+The 50 most recent changes for lib/Exporter.pm (APC)
+http://public.activestate.com/cgi-bin/perlbrowse?show_filelog=Show+Recent+Changes&filename=lib%2FExporter.pm&rev=&change=

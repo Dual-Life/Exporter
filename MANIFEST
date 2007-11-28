@@ -8,4 +8,6 @@ lib/Exporter.pm
 lib/Exporter/Heavy.pm
 
 t/Exporter.t
+t/use.t
+t/pod.t
 META.yml                                 Module meta-data (added by MakeMaker)
