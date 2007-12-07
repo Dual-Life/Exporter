@@ -1,5 +1,13 @@
 Revision history for Perl extension Exporter.
 
+5.60_01 Thu Dec  6 2007
+        - "use 5.006" in Makefile.PL
+        - no code change
+        - doc patch: new section SEE ALSO (Exporter is not alone)
+        - doc patch: new section Good Practices - mentions 
+          "our" and "use vars", "base" and "parent" 
+          and advocates against exporting variables
+          
 5.60    Sat Mar 10 2007
         - Bump Exporter's $VERSION (change 30525)
         - Don't swallow up other warnings in Exporter's test. Remove a needless
@@ -20,3 +28,4 @@ Revision history for Perl extension Exporter.
 
 The 50 most recent changes for lib/Exporter.pm (APC)
 http://public.activestate.com/cgi-bin/perlbrowse?show_filelog=Show+Recent+Changes&filename=lib%2FExporter.pm&rev=&change=
+
