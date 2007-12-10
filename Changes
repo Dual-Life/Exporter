@@ -1,12 +1,6 @@
 Revision history for Perl extension Exporter.
 
-5.62    ??? Dec ?? 2007
-        - no code change
-        - fix typo in section link
-        - mention Exporter::Easy 
-
 5.61    Fri Dec  9 2007
-        - no code change
         - sync with changes 32596 (fixes by rgs)
           and 32599 (typo spotted by Matt Kraai)
 
