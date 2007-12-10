@@ -1,5 +1,9 @@
 Revision history for Perl extension Exporter.
 
+5.61    Fri Dec  9 2007
+        - sync with changes 32596 (fixes by rgs)
+          and 32599 (typo spotted by Matt Kraai)
+
 5.60_01 Thu Dec  6 2007
         - "use 5.006" in Makefile.PL
         - no code change

@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Exporter
-version:             5.60_01
+version:             5.61
 abstract:            Implements default import method for modules
 license:             perl
 author:              ~
