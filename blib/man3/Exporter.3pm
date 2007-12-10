@@ -567,9 +567,23 @@ while \f(CW\*(C`parent\*(C'\fR is a streamlined version of the older
 .PP
 For more details, see the documentation and code of
 base and parent.
+.PP
+Another thorough remedy to that runtime vs. 
+compile-time trap is to use Exporter::Easy,
+which is a wrapper of Exporter that allows all
+boilerplate code at a single gulp in the
+use statement.
+.PP
+.Vb 5
+\&   use Exporter::Easy (
+\&       OK => [ qw(munge frobnicate) ],
+\&   );
+\&   # @ISA setup is automatic
+\&   # all assignments happen at compile time
+.Ve
 .Sh "What not to Export"
 .IX Subsection "What not to Export"
-You have been warned already in \*(L"Selecting What to Export\*(R"
+You have been warned already in \*(L"Selecting What To Export\*(R"
 to not export:
 .IP "\(bu" 4
 method names (because you don't need to
