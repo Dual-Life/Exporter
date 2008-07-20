@@ -1,6 +1,22 @@
 Revision history for Perl extension Exporter.
 
-5.62    ??? Dec ?? 2007
+        - doc patches:
+          x TODO new section BUGS
+          x TODO new section AUTHORS
+          x TODO new section COPYRIGHT
+          x TODO history in Changes
+          x TODO rewrite docs (FUNCTIONS, etc.)
+          x TODO new functions "combine_tags" (or "generate_tag")
+          x TODO all indentation 2 spaces
+          x TODO README file
+
+5.63    Sat Jul 19 2008
+        - fix doc bugs (pointed by Philippe Bricout at
+          CPAN RT #33546) 
+        - reconciliate Exporter with Carp older than 1.05
+          (thanks to Anno Siegel, perlbug RT #57079)
+
+5.62    Fri Dec  9 2007
         - no code change
         - fix typo in section link
         - mention Exporter::Easy 

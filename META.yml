@@ -1,10 +1,10 @@
 --- #YAML:1.0
 name:                Exporter
-version:             5.62
+version:             5.63
 abstract:            Implements default import method for modules
 license:             perl
 author:              ~
-generated_by:        ExtUtils::MakeMaker version 6.38
+generated_by:        ExtUtils::MakeMaker version 6.44
 distribution_type:   module
 requires:     
 meta-spec:
