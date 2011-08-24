@@ -10,6 +10,12 @@ Revision history for Perl extension Exporter.
           x TODO all indentation 2 spaces
           x TODO README file
 
+5.64_03 Wed Aug 24 2011 (Cumulative)
+        - Fix RT #74472 Exporter.pm blocks Signal handling
+        - Avoid creating @EXPORT_FAIL in every package using Exporter.
+        - Test exported arrays and hashes without using defined()
+        - Carp 1.05 shipped with 5.8.8. Remove work-around for pre 1.05
+
 5.63    Sat Jul 19 2008
         - fix doc bugs (pointed by Philippe Bricout at
           CPAN RT #33546) 
