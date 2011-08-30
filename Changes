@@ -9,6 +9,9 @@ Revision history for Perl extension Exporter.
           x TODO new functions "combine_tags" (or "generate_tag")
           x TODO all indentation 2 spaces
 
+5.65 Tue Aug 30 2011 Todd Rinaldo
+        - No changes. Tests clean. Bumping to production release.
+
 5.64_04 Wed Aug 24 2011 Todd Rinaldo
         - Re-vamp module to work in Git.
         - Update Makefile.PL with extra META bits.
