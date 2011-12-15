@@ -9,6 +9,19 @@ Revision history for Perl extension Exporter.
           x TODO new functions "combine_tags" (or "generate_tag")
           x TODO all indentation 2 spaces
 
+5.65_01 Wed Dec 14 2011 Todd Rinaldo
+        - Updaate Exporter from blead. Bump to dev version for release testing.
+	- Remove local $_ from Exporter - The changes in that commit did
+	  not necessitate the addition of
+    	  local  $_.  So the localisation is wasting CPU cycles.  Worse, it
+    	  causes  bugs in 5.12 and earlier.  (local $_ is always wrong if you
+    	  don’t control what is in $_ already, because it could be a read-only
+    	  tied variable.)  Actually, it causes bugs in 5.14-15 still, because
+    	  it seems that the changes to ‘local $_’ still weren’t sufficient (it
+    	  still calls FETCH, but not STORE).  That itself needs fixing, but that
+    	  should not obviate the need for this change, as Exporter has been liv-
+    	  ing a double life.
+
 5.65 Tue Aug 30 2011 Todd Rinaldo
         - No changes. Tests clean. Bumping to production release.
 
