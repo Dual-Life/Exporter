@@ -27,4 +27,4 @@ resources:
   license: http://dev.perl.org/licenses/
   repository: http://perl5.git.perl.org/perl.git/tree/HEAD:/lib
   x_MailingList: http://lists.perl.org/list/perl5-porters.html
-version: 5.65_01
+version: 5.66

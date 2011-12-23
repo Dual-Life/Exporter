@@ -40,7 +40,7 @@
          }
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
          "web" : "http://rt.perl.org/perlbug/"
@@ -53,5 +53,5 @@
       },
       "x_MailingList" : "http://lists.perl.org/list/perl5-porters.html"
    },
-   "version" : "5.65_01"
+   "version" : "5.66"
 }
