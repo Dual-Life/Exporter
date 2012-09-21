@@ -7,7 +7,7 @@ $EUMM_VERSION =~ s/_//g;
 WriteMakefile(
     NAME              => 'Exporter',
     VERSION_FROM      => 'lib/Exporter.pm',
-    ($] < 5.008 && $] > 5.011) ? () : ( INSTALLDIRS => 'perl' ), # CPAN sourced versions should now install to site
+    ($] < 5.008 || $] > 5.011) ? () : ( INSTALLDIRS => 'perl' ), # CPAN sourced versions should now install to site
     PREREQ_PM         => {
 	'Carp' => '1.05',
     },

@@ -9,6 +9,10 @@ Revision history for Perl extension Exporter.
           x TODO new functions "combine_tags" (or "generate_tag")
           x TODO all indentation 2 spaces
 
+5.67 Thu Sep 20 2012 Todd Rinaldo
+        - Documentation changes from p5p. 
+        - Fix logic to install to site after perl 5.11
+
 5.66 Wed Dec 23 2011 Todd Rinaldo
         - No changes. Production release after CPAN testers cleared.
 
