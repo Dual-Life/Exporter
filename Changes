@@ -9,6 +9,12 @@ Revision history for Perl extension Exporter.
           x TODO new functions "combine_tags" (or "generate_tag")
           x TODO all indentation 2 spaces
 
+5.72 Tue June 9 2015
+        - rename anonymous list -> array in docs from blead
+
+5.70 Sun Apr 13 2014
+        - Bump for release to CPAN
+
 5.70_01 Wed Apr 9 2014 Todd Rinaldo
         - perl #  39739 - Exporter::Heavy ignores custom $SIG{__WARN__} handlers
 	- perl # 119673 - Documentation fixes.
