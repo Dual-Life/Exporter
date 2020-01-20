@@ -1,5 +1,10 @@
 Revision history for Perl extension Exporter.
 
+5.74 Mon January 20 2020
+     - Fix leading spaces in Exporter error message
+     - Switch to github actions for pre-release actions
+     - Point to github repo and issues for support
+
 5.73 Fri September 21 2018
      - Slight doc patches mostly involving the use of our.
 
