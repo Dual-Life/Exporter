@@ -4,5 +4,7 @@ cpanfile
 ^Makefile$
 ^.github/
 ^.git/
+^xt/
 ^MYMETA.*
 ^.gitignore
+^.claude/

@@ -26,10 +26,13 @@ jobs:
         uses: perl-actions/install-with-cpm@v1
         with:
           cpanfile: "cpanfile"
+          args: "--with-develop"
       - run: perl Makefile.PL
       - run: make
       - run: make test
         timeout-minutes: 5
+      - name: Author tests (xt/)
+        run: prove -lr xt/
       - run: sudo make install
 
   # ------------------------------------------------------------------------
@@ -100,10 +103,13 @@ jobs:
         with:
           cpanfile: "cpanfile"
           sudo: false
+          args: "--with-develop"
       - run: perl Makefile.PL
       - run: make
       - run: make test
         timeout-minutes: 5
+      - name: Author tests (xt/)
+        run: prove -lr xt/
       - run: make install
 
   # ------------------------------------------------------------------------
